@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ledger</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="budget">\t Set your monthly budget here and other periodic budget will be calculated and accordingly your daily budget will be notified
+    to you daily in summary</string>
+    <string name="accounts">To manually set the account values, click the account name and input the value</string>
+</resources>

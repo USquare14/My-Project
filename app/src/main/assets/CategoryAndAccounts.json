@@ -1,0 +1,25 @@
+{
+  "CategoryExpense": [
+    "Food",
+    "Entertainment",
+    "Travel",
+    "Education",
+    "Clothing/Beauty",
+    "Medical",
+    "Social",
+    "Other Expense"
+  ],
+
+  "CategoryIncome":[
+    "Salary",
+    "Pocket Money",
+    "Part-Time job",
+    "Other Income"
+  ],
+
+  "AccountNames":[
+    "Cash",
+    "Card",
+    "Bank"
+  ]
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="8">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/account_filter"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="7"
+                android:text="Filter expenses by: "
+                android:textSize="@dimen/large_text"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:padding="3dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get expenses on basis of: "
+            android:textSize="@dimen/medium_text"
+            android:layout_marginTop="10dp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgOptions"
+            android:layout_below="@+id/tvQuestion"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbByDate"
+                android:text="ByDate"
+                android:textColor="@color/grey_700"
+                android:textSize="@dimen/medium_text"
+                android:padding="2dp"/>
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbByMonth"
+                android:text="ByMonth"
+                android:textColor="@color/grey_700"
+                android:textSize="@dimen/medium_text"
+                android:padding="2dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Date or Month as per requirment: "
+            android:textSize="@dimen/medium_text"
+            android:layout_marginTop="20dp"/>
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:id="@+id/anlysisDatePicker"
+            android:layout_gravity="center_horizontal"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/generateReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/primary_dark"
+            android:text="Generate Report"/>
+
+    </LinearLayout>
+
+</ScrollView>
